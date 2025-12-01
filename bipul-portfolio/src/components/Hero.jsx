@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const titles = ['Frontend Developer', 'React Enthusiast', 'MERN Learner']
+const titles = ['Full Stack Developer', 'React Enthusiast']
 
 export default function Hero() {
   const [idx, setIdx] = useState(0)

@@ -31,7 +31,7 @@ export default function About() {
           <ul className="space-y-4">
             <li className="flex items-center justify-between">
               <span className="text-slate-400">Role</span>
-              <span>Frontend Developer</span>
+              <span>FullStack Developer</span>
             </li>
             <li className="flex items-center justify-between">
               <span className="text-slate-400">Location</span>

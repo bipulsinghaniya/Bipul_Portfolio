@@ -46,7 +46,7 @@ export default function Header() {
               </a>
             ))}
             <span className="ml-4 text-xs rounded-full border border-white/10 px-3 py-1 text-slate-200">
-              Frontend Developer
+              Full Stack Developer
             </span>
           </nav>
 
