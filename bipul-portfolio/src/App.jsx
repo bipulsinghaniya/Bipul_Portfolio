@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
+import Achievements from "./components/Achievements";
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx'
@@ -35,6 +36,7 @@ export default function App() {
       <main className="container">
         <Hero />
         <About />
+        <Achievements />
         <Skills />
         <Projects />
         <Education />
