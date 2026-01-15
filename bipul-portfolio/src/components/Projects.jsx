@@ -836,6 +836,58 @@ export default function Projects() {
 
       <div className="grid md:grid-cols-2 gap-6">
 
+{/* === 4th - UniNotes (MERN Notes Portal) === */}
+<motion.div
+  initial={{ opacity: 0, y: 16 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="rounded-2xl glass p-6 shadow-glow"
+>
+  <div className="flex items-center gap-3">
+    <Hammer />
+    <h3 className="text-lg font-semibold">UniNotes – College Notes Portal (MERN)</h3>
+  </div>
+
+  <p className="mt-3 text-slate-300">
+    A full-stack MERN-based college notes platform providing branch-wise and year-wise
+    access to academic notes with secure authentication and admin management.
+  </p>
+
+  <div className="flex gap-4 mt-4">
+    <a
+      href="https://uninotes-frontend.onrender.com/"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Link size={18} /> Live Demo
+    </a>
+    <a
+      href="https://github.com/bipulsinghaniya/uniNotes"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Github size={18} /> GitHub
+    </a>
+  </div>
+
+  <div className="flex flex-wrap gap-2 mt-4 text-xs">
+    <span className="px-2 py-1 rounded bg-purple-600/30">MongoDB</span>
+    <span className="px-2 py-1 rounded bg-green-600/30">Express</span>
+    <span className="px-2 py-1 rounded bg-blue-600/30">React</span>
+    <span className="px-2 py-1 rounded bg-yellow-500/30">Node.js</span>
+    <span className="px-2 py-1 rounded bg-red-500/30">JWT Auth</span>
+    <span className="px-2 py-1 rounded bg-teal-600/30">Admin Panel</span>
+  </div>
+</motion.div>
+
+
+
+
+
+
         {/* === 1st Card - MERN Notes App === */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
