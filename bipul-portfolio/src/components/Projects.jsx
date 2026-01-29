@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Hammer, Github, Link, UtensilsCrossed, MessageCircle, Calculator  } from 'lucide-react'
+import { Hammer, Github, Link, UtensilsCrossed, MessageCircle, Calculator  ,CloudSun  }from 'lucide-react'
 
 export default function Projects() {
   return (
@@ -355,6 +355,58 @@ export default function Projects() {
  
 
 
+
+
+
+{/* === Live Weather App === */}
+<motion.div
+  initial={{ opacity: 0, y: 16 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="rounded-2xl glass p-6 shadow-glow"
+>
+  <div className="flex items-center gap-3">
+    <CloudSun />
+    <h3 className="text-lg font-semibold">
+      Live Weather Application
+    </h3>
+  </div>
+
+  <p className="mt-3 text-slate-300">
+    A premium weather application that fetches real-time weather data by city,
+    displaying temperature, humidity, wind speed, and weather conditions with
+    smooth UI animations and a glassmorphism design.
+  </p>
+
+  <div className="flex gap-4 mt-4">
+    <a
+      href="https://liveweather-bipul.netlify.app"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Link size={18} /> Live Demo
+    </a>
+    <a
+      href="https://github.com/bipulsinghaniya"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Github size={18} /> GitHub
+    </a>
+  </div>
+
+  <div className="flex flex-wrap gap-2 mt-4 text-xs">
+    <span className="px-2 py-1 rounded bg-blue-600/30">HTML</span>
+    <span className="px-2 py-1 rounded bg-teal-600/30">Tailwind CSS</span>
+    <span className="px-2 py-1 rounded bg-yellow-500/30">JavaScript</span>
+    <span className="px-2 py-1 rounded bg-sky-600/30">Weather API</span>
+    <span className="px-2 py-1 rounded bg-purple-600/30">Glassmorphism</span>
+    <span className="px-2 py-1 rounded bg-pink-600/30">Netlify</span>
+  </div>
+</motion.div>
 
 
 
