@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Hammer, Github, Link, UtensilsCrossed, MessageCircle } from 'lucide-react'
+import { Hammer, Github, Link, UtensilsCrossed, MessageCircle, Calculator  } from 'lucide-react'
 
 export default function Projects() {
   return (
@@ -297,6 +297,69 @@ export default function Projects() {
             <span className="px-2 py-1 rounded bg-blue-600/30">React Hooks</span>
           </div>
         </motion.div>
+
+
+
+        {/* === LPU CGPA / TGPA Calculator === */}
+{/* === LPU CGPA / TGPA Calculator === */}
+<motion.div
+  initial={{ opacity: 0, y: 16 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="rounded-2xl glass p-6 shadow-glow"
+>
+  <div className="flex items-center gap-3">
+    <Calculator />
+    <h3 className="text-lg font-semibold">
+      LPU CGPA / TGPA Calculator
+    </h3>
+  </div>
+
+  <p className="mt-3 text-slate-300">
+    A responsive academic grade calculator built for Lovely Professional University
+    students to compute CGPA (CSE) and TGPA (Agriculture) using dynamic inputs,
+    credit-based formulas, and real-time result evaluation.
+  </p>
+
+  <div className="flex gap-4 mt-4">
+    <a
+      href="https://lpu-grade-calculator.netlify.app"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Link size={18} /> Live Demo
+    </a>
+    <a
+      href="https://github.com/bipulsinghaniya"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 text-sky-400 hover:underline"
+    >
+      <Github size={18} /> GitHub
+    </a>
+  </div>
+
+  <div className="flex flex-wrap gap-2 mt-4 text-xs">
+    <span className="px-2 py-1 rounded bg-blue-600/30">HTML</span>
+    <span className="px-2 py-1 rounded bg-teal-600/30">Tailwind CSS</span>
+    <span className="px-2 py-1 rounded bg-yellow-500/30">JavaScript</span>
+    <span className="px-2 py-1 rounded bg-purple-600/30">Dynamic DOM</span>
+    <span className="px-2 py-1 rounded bg-green-600/30">Grade Logic</span>
+    <span className="px-2 py-1 rounded bg-pink-600/30">Netlify</span>
+  </div>
+</motion.div>
+
+
+ 
+
+
+
+
+
+
+
 
       </div>
     </section>
