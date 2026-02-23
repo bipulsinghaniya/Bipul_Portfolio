@@ -50,7 +50,7 @@ export default function Education() {
           Lovely Professional University (LPU)
         </p>
 <p className="text-slate-200 text-base mt-1 font-semibold">
-  CGPA: 8.47
+  CGPA: 8.63
 </p>
 
 
